@@ -3,21 +3,15 @@
     const light = ref<boolean>(true)
     function toggleMode() {
         light.value = !light.value
-
-        if (light.value) {
-            // document.body.classList.add("light-mode");
-            document.body.classList.remove("dark-mode");
-        } else {
-            document.body.classList.add("dark-mode");
-            const main : any = document.getElementById('home-main');
-            main.classList.add("dark-mode");
-            // document.body.classList.remove("light-mode");
-        }
+        const main : any = document.getElementById('home-main');
+        console.log(main)
+        // main.classList.toggle("dark");
+        document.body.classList.toggle("dark");
     }
 </script>
 
 <template>
-    <header class="flex justify-between items-center p-4 bg-white border-b-4 border-b-gray-100 max-w-[1440px]">
+    <header class="flex justify-between items-center p-4 bg-white border-b-4 border-b-gray-100 max-w-[1440px] dark:bg-gray-800 dark:text-white">
         
         <p class="text-[22px] font-extrabold ml-4"> Where in the world? </p>
         <div @click="toggleMode">

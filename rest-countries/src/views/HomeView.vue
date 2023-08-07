@@ -41,18 +41,18 @@
 </script>
 
 <template>
-  <main class="bg-gray-100 m-0 p-4 max-w-[1440px]" id="home-main">
+  <main class="bg-gray-100 m-0 p-4 max-w-[1440px] dark:bg-gray-900 dark:text-white" id="home-main">
 
     <div class="flex justify-between mt-8 mb-8">
       <div class="relative mx-2">
         <button class="absolute left-0 m-auto pointer p-4">
           <font-awesome-icon :icon="['fas', 'magnifying-glass']" />
         </button>
-        <input class="p-4 pl-[50px] rounded-md w-[500px] text-[16px] border-none" type="text" placeholder="Search for a country" v-model="countrySearched" />
+        <input class="p-4 pl-[50px] rounded-md w-[500px] text-[16px] border-none dark:bg-gray-800" type="text" placeholder="Search for a country" v-model="countrySearched" />
       </div>
 
       <div class="mx-2">
-        <select class="p-4 rounded-md" name="region" id="region" v-model="regionSelected">
+        <select class="p-4 rounded-md dark:bg-gray-800" name="region" id="region" v-model="regionSelected">
           <option value="" disabled selected hidden>Filter by Region</option>
           <option value="">All</option>
           <option value="Africa"> Africa </option>

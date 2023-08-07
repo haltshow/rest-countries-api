@@ -37,8 +37,8 @@
 
 
 <template>
-    <div class="max-w-[1440px] text-[16px]">
-        <div class="my-10">
+    <div class="max-w-[1440px] text-[16px] dark:bg-gray-800 dark:text-white">
+        <div class="py-10 pl-4">
             <a href="/">
                 <button class="py-2 px-8 shadow-md shadow-gray-500 rounded-md"> 
                     <div class="flex justify-center items-center gap-2 mr-4">
