@@ -6,20 +6,12 @@
 body {
   text: 14px;
   font-family: 'Nunito Sans', sans-serif;
-  font-family: 'Roboto', sans-serif;
   display: flex;
   justify-content: center;
+  font-weight: 400;
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-}
-
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+.dark-mode {
+  background-color: black;
+  color: white;
 }

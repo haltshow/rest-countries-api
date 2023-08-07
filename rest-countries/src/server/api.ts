@@ -15,6 +15,7 @@ export async function getAllCountries() {
 export interface Country {
     flags: {
         png: string
+        svg: string
     },
     name: {
         common: string
