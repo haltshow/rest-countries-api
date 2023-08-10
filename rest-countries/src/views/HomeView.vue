@@ -43,12 +43,12 @@
 <template>
   <main class="bg-gray-100 m-0 p-4 max-w-[1440px] dark:bg-gray-900 dark:text-white" id="home-main">
 
-    <div class="flex justify-between mt-8 mb-8">
+    <div class="md:flex md:justify-between mt-8 mb-8 flex flex-col justify-center items-center gap-2">
       <div class="relative mx-2">
         <button class="absolute left-0 m-auto pointer p-4">
           <font-awesome-icon :icon="['fas', 'magnifying-glass']" />
         </button>
-        <input class="p-4 pl-[50px] rounded-md w-[500px] text-[16px] border-none dark:bg-gray-800" type="text" placeholder="Search for a country" v-model="countrySearched" />
+        <input class="p-4 pl-[50px] rounded-md w-[375px] text-[16px] border-none dark:bg-gray-800" type="text" placeholder="Search for a country" v-model="countrySearched" />
       </div>
 
       <div class="mx-2">
@@ -64,7 +64,7 @@
       </div>
     </div>
 
-    <div class="grid grid-cols-4">
+    <div class="lg:grid lg:grid-cols-4 md:grid md:grid-cols-2">
       <CardCountry v-for="(country, id) of countries" :key="id" 
         :country="{ 
             id,

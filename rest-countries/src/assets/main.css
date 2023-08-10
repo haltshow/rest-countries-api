@@ -10,8 +10,11 @@ body {
   justify-content: center;
   font-weight: 400;
   height: 100vh;
+  margin:0;
+  padding:0;
+  overflow: scroll;
 }
 
 main {
-  height: 100vh;
+  display: block;
 }

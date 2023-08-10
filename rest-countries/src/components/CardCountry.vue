@@ -4,8 +4,10 @@
 </script>
 
 <template>
-    <a class="no-underline" @click="$router.push({name: 'detailCountry', params: { id: country.id }});">
-        <div class="flex flex-col justify-start bg-white mx-2 my-4 shadow-md p-0 h-[400px] cursor-pointer dark:bg-gray-800">
+    <div class="flex justify-center">
+        <div class="flex flex-col justify-start bg-white mx-2 my-4 shadow-md p-0 h-[400px] w-[375px] cursor-pointer dark:bg-gray-800"
+            @click="$router.push({name: 'detailCountry', params: { id: country.id }});"
+        >
             <div class="">
                 <picture>
                     <img class="w-full h-[230px]" :src="country?.flag" :alt="'Bandeira do país'+country?.name">
@@ -18,5 +20,5 @@
                 <p> <span class="font-semibold">Capital:</span> {{ country?.capital ? country.capital[0] : '' }} </p>
             </div>
         </div>
-    </a>
+    </div>
 </template>

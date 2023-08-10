@@ -6,7 +6,6 @@ export async function getAllCountries() {
         url: 'https://restcountries.com/v3.1/all',
     };
     const response : any = await axios.request(options);
-    console.log("response: ", response.data)
     const countries = response.data
 
     return countries

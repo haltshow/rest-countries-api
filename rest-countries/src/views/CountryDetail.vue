@@ -37,7 +37,7 @@
 
 
 <template>
-    <div class="max-w-[1440px] text-[16px] dark:bg-gray-800 dark:text-white">
+    <main class="max-w-[1440px] text-[16px] dark:bg-gray-800 dark:text-white p-2">
         <div class="py-10 pl-4">
             <a href="/">
                 <button class="py-2 px-8 shadow-md shadow-gray-500 rounded-md"> 
@@ -49,15 +49,15 @@
                 </button>
             </a>
         </div>
-        <div class="flex justify-center items-center gap-32">
+        <div class="flex justify-center items-center gap-16 flex-col lg:flex-row">
             <div>
                 <picture class="relative flex border-red-300 border">
-                    <img class="max-w-[600px] max-h-[400px]" :src="data?.flags.svg" :alt="'Bandeira do país'+data?.name?.common">
+                    <img class="max-w-[375px] max-h-[400px]" :src="data?.flags.svg" :alt="'Bandeira do país'+data?.name?.common">
                 </picture>
             </div>
-            <div>
+            <div class="max-w-[375px] mb-4 p-2">
                 <p class="font-extrabold text-[32px] mb-4"> {{ data?.name?.common }} </p>
-                <div class="flex justify-start items-start gap-8 mb-8">
+                <div class="flex flex-col justify-start items-start gap-8 mb-8 lg:flex-row">
                     <div>
                         <p class="leading-loose"> <span class="font-extrabold"> Native Name: </span> {{ data?.name.official }} </p>
                         <p class="leading-loose"> <span class="font-extrabold"> Population: </span> {{ population }} </p>
@@ -79,13 +79,13 @@
                         </p>
                     </div>
                 </div>
-                <div class="flex justify-start items-center gap-4">
+                <div class="flex flex-col justify-start items-start gap-4 lg:flex-row">
                     <p class="font-extrabold"> Border Countries: </p>
-                    <div class="flex gap-2">
+                    <div class="flex gap-2 flex-wrap justify-center items-center lg:flex-row">
                         <button class="px-4 rounded-md border-2" v-for="(nameCountry, id) of borderCountries" :key="id"> {{ nameCountry }} </button>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </main>
 </template>
