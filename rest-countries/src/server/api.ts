@@ -6,7 +6,13 @@ export async function getAllCountries() {
         url: 'https://restcountries.com/v3.1/all',
     };
     const response : any = await axios.request(options);
-    const countries = response.data
+    let countries = [];
+    if (response.data) {
+        countries = response.data
+    } else {
+        const res : any = await fetch('data.json');
+        countries = await res.json();
+    }
 
     return countries
 }
