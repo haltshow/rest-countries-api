@@ -42,7 +42,7 @@
 <template>
   <main class="bg-gray-100 m-0 p-4 max-w-[1440px] dark:bg-gray-900 dark:text-white" id="home-main">
 
-    <div class="lg:flex lg:justify-between mt-8 mb-8 flex flex-col justify-center items-center gap-2">
+    <div class="lg:flex lg:justify-between lg:flex-row mt-8 mb-8 flex flex-col justify-center items-center gap-2">
       <div class="relative mx-2">
         <button class="absolute left-0 m-auto pointer p-4">
           <font-awesome-icon :icon="['fas', 'magnifying-glass']" />
