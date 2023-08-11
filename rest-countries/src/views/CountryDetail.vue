@@ -49,9 +49,9 @@
                 </button>
             </a>
         </div>
-        <div class="flex justify-center items-center gap-16 flex-col lg:flex-row">
+        <div class="flex justify-center items-start gap-16 flex-col lg:flex-row">
             <div>
-                <picture class="relative flex border-red-300 border">
+                <picture class="flex border-red-300 border">
                     <img class="max-w-[375px] max-h-[400px]" :src="data?.flags.svg" :alt="'Bandeira do país'+data?.name?.common">
                 </picture>
             </div>

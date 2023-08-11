@@ -63,7 +63,7 @@
       </div>
     </div>
 
-    <div class="lg:grid lg:grid-cols-4 md:grid md:grid-cols-2">
+    <div class="lg:grid lg:grid-cols-4 md:grid md:grid-cols-2 grid grid-cols-1 gap-8 justify-items-center">
       <CardCountry v-for="(country, id) of countries" :key="id" 
         :country="{ 
             id,
