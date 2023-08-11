@@ -5,10 +5,10 @@
 
 <template>
     <div class="flex justify-center">
-        <div class="flex flex-col justify-start bg-white mx-2 my-4 shadow-md p-0 h-[400px] w-[375px] cursor-pointer dark:bg-gray-800"
+        <div class="flex flex-col justify-start bg-white mx-2 my-4 shadow-md p-0 h-[400px] w-[375px] cursor-pointer dark:bg-gray-800 rounded-md"
             @click="$router.push({name: 'detailCountry', params: { id: country.id }});"
         >
-            <div class="">
+            <div>
                 <picture>
                     <img class="w-full h-[230px]" :src="country?.flag" :alt="'Bandeira do país'+country?.name">
                 </picture>
