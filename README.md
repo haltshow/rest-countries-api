@@ -1,6 +1,8 @@
-# Frontend Mentor - Solução do Product preview card component
+# Frontend Mentor - Solução do Rest Countries API
 
-Essa é uma solução para o desafio Interactive Rating Component do Frontend MentorIO.
+Essa é uma solução para o desafio Rest Countries API do Frontend MentorIO.
+
+Projeto publicado: https://rest-countries-api-seven-tau.vercel.app/
 
 ## Sumário
 
@@ -15,9 +17,10 @@ Essa é uma solução para listar todos os países consumindo os dados de uma AP
 
 ### Foto
 
-Essa é uma foto de como ficou o desafio.
+Essas são fotos de como ficou o desafio:
 
 ![](./screenshot.PNG)
+![](./screenshot-dark.PNG)
 
 ### Construído com
 
