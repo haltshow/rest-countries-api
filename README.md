@@ -2,7 +2,7 @@
 
 Essa é uma solução para o desafio Rest Countries API do Frontend MentorIO.
 
-Projeto publicado: https://rest-countries-api-seven-tau.vercel.app/
+Projeto publicado: https://rest-countries-api-haltshow.vercel.app/
 
 ## Sumário
 
