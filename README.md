@@ -1,6 +1,6 @@
 # Frontend Mentor - Solução do Product preview card component
 
-Essa é uma solução para o desafio Interactive Rating Component do Frontend MentorIO.
+Essa é uma solução para o desafio Rest Countries API do Frontend MentorIO.
 
 ## Sumário
 
